@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState,useContext } from 'react'
 import gsap from "gsap";
-
+import GoogleMapTA from "../images/GoogleMapTA.jpeg"
 import "remixicon/fonts/remixicon.css";
 import {useLocation,useNavigate} from 'react-router-dom'
 import {socketDataContext} from '../context/SocketContext'
@@ -30,7 +30,7 @@ const MakePayment = () => {
         navigate('/main-home')
     })
   return (
-    <div className="flex   fixed w-full flex-col justify-end bg-cover bg-center h-screen"style={{ backgroundImage: "url('/src/images/GoogleMapTA.webp')" }}>
+    <div className="flex   fixed w-full flex-col justify-end bg-cover bg-center h-screen"style={{ backgroundImage: `url(${GoogleMapTA})` }}>
     <div ref={paymentPageRef} className=" fixed bottom-0  bg-white px-3 pt-8 w-full rounded-t-xl border-2 border-gray-50 ">
 
         <h2 className="my-2 text-2xl  font-medium mb-7">Payment please</h2>

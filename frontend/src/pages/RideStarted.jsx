@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import FinalRide from '../Component/FinalRide'
 import { Link } from 'react-router-dom'
 import {useLocation} from 'react-router-dom'
+import GoogleMapTA from "../images/GoogleMapTA.jpeg"
 const RideStarted = ({passenger}) => {
     const location= useLocation();
     const{ride} =location.state || {}
@@ -11,7 +12,7 @@ const RideStarted = ({passenger}) => {
     <div>
 
     
-        <div className="flex   fixed w-full flex-col justify-end bg-cover bg-center h-screen"style={{ backgroundImage: "url('/src/images/GoogleMapTA.webp')" }}>
+        <div className="flex   fixed w-full flex-col justify-end bg-cover bg-center h-screen"style={{ backgroundImage: `url(${GoogleMapTA})` }}>
             <img className="absolute top-0 w-20" src="https://download.logo.wine/logo/Uber/Uber-Logo.wine.png"></img>
             <div className=' bg-amber-300 rounded-xl p-3 pt-8  '>  {/*white color div*/}
                 

@@ -7,7 +7,7 @@ import { socketDataContext } from "../context/SocketContext";
 import axios from "axios";
 import RideStarted from "./RideStarted";
 import { userDataContext } from "../context/UserContext";
-
+import GoogleMapTA from "../images/GoogleMapTA.jpeg"
 const CaptainHome = () => {
   let [confirm, setConfirm] = useState(false);
   let [showNewRide, setShownewRide] = useState(false); //ride available ppup
@@ -72,7 +72,7 @@ const CaptainHome = () => {
     <div>
       <div
         className="flex   fixed w-full flex-col justify-end bg-cover bg-center h-screen"
-        style={{ backgroundImage: "url('/src/images/GoogleMapTA.webp')" }}
+        style={{ backgroundImage: `url(${GoogleMapTA})` }}
       >
         <img
           className="absolute top-0 w-20"
