@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import start from "../images/start.jpeg"
 const Home = () => {
   return (
     <div className='flex flex-col justify-between h-screen w-full bg-red-400 bg-cover bg-center'
-    style={{ backgroundImage: "url('/src/images/start.jpeg')" }}>
+    style={{ backgroundImage: `url(${start})` }}>
         <div>
             <img className='w-20' src='https://download.logo.wine/logo/Uber/Uber-Logo.wine.png'></img>
             

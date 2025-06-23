@@ -13,6 +13,7 @@ import DriverFound from "../Component/DriverFound";
 import { userDataContext } from "../context/UserContext";
 import {socketDataContext} from "../context/SocketContext";
 import {useNavigate} from 'react-router-dom'
+import GoogleMapTA from "../images/GoogleMapTA.jpeg"
 const MainHome = () => {
   const navigate = useNavigate()
   const [show, setShow] = useState(false);
@@ -133,7 +134,7 @@ const MainHome = () => {
   })
 
   return (
-    <div className="flex flex-col justify-end bg-cover bg-center h-screen" style={{ backgroundImage: "url('/src/images/GoogleMapTA.webp')" }}>
+    <div className="flex flex-col justify-end bg-cover bg-center h-screen" style={{ backgroundImage: `url(${GoogleMapTA})` }}>
       <img className="absolute top-0 w-20" src="https://download.logo.wine/logo/Uber/Uber-Logo.wine.png"></img>
       <div ref={panelRef} className="px-5 py-5 h-[30%] bg-white fixed z-20 bottom-0 ">
         <div>
